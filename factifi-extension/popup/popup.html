@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Factifi Fact-Checker</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Factifi</h1>
+    <button id="checkPage">Check This Page</button>
+    <div id="results" class="hidden">
+      <h2>Fact-Check Results</h2>
+      <div class="score-container">
+        <span>Confidence Score:</span>
+        <span id="confidenceScore"></span>
+      </div>
+      <div class="citations-container">
+        <h3>Citations:</h3>
+        <ul id="citationsList"></ul>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="toggleDarkMode">Toggle Dark Mode</button>
+      <button id="refresh">Refresh</button>
+    </div>
+  </div>
+</body>
+</html>
